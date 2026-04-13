@@ -1,4 +1,4 @@
-
+/* General styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -10,6 +10,7 @@ body {
 header {
     background-image: linear-gradient(to right, #4CAF50, #45a049);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
 /* Main presentation styles */
@@ -33,7 +34,7 @@ section {
 
 /* Form styles */
 form {
-    max-width: 600px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -42,4 +43,23 @@ footer {
     background-color: #333;
     color: white;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .main-presentation {
+        padding: 15px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    form .form-control {
+        font-size: 0.9rem;
+    }
 }
